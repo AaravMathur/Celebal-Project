@@ -2,7 +2,7 @@ name: CI - Build Spring Boot App
 
 on:
   push:
-    branches: [ "Project" ]  # or your branch name
+    branches: [ "Project" ]
   pull_request:
     branches: [ "Project" ]
 
@@ -28,4 +28,3 @@ jobs:
         with:
           name: app-jar
           path: target/*.jar
-
