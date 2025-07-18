@@ -1,16 +1,17 @@
-name: Build and Push Docker Image
+name: Build and Push Docker Image to ACR
 
 on:
   push:
     branches:
-      - Project  # change this to your branch name if different
+      - main
+      - Project  # update this if you're using a different branch name
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout source code
         uses: actions/checkout@v3
 
       - name: Set up JDK 17
@@ -19,12 +20,16 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Install Maven
+        uses: s4u/setup-maven-action@v1
+        with:
+          maven-version: '3.9.6'
+
       - name: Build JAR file
-        run: |
-          ./mvnw clean package -DskipTests
+        run: mvn clean package -DskipTests
 
       - name: Log in to Azure Container Registry
-        run: echo "${{ secrets.ACR_PASSWORD }}" | docker login aaravregistry.azurecr.io -u ${{ secrets.ACR_USERNAME }} --password-stdin
+        run: echo "${{ secrets.ACR_PASSWORD }}" | docker login aaravregistry.azurecr.io -u aaravregistry --password-stdin
 
       - name: Build Docker image
         run: docker build -t aaravregistry.azurecr.io/acidemo:latest .
