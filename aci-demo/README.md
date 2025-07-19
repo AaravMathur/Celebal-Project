@@ -125,5 +125,5 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 
 ## Final Outcome
 
-Your app is live at: 🔗 http://project.aaravdevops.xyz  
+Your app is live at: 🔗 http://celebal.aaravdevops.xyz:8080 
 Use **HTTP**, not HTTPS. Open in **Private/Incognito mode** to avoid forced HTTPS redirection.
