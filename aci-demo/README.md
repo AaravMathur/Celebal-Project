@@ -38,9 +38,11 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Updated `application.properties` to disable SSL by default
 
 **application.properties**
+
 ![Application Properties](<images/All the images/Pasted image 20250719130212.png>)
 
 **Dockerfile**
+
 ![Dockerfile](<images/All the images/Pasted image 20250719130324.png>)
 
 ### Task 3: Azure Container Registry (ACR Setup)
@@ -59,12 +61,15 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Built & pushed Docker image automatically to ACR
 
 1. `ci.yml` file:
+
 ![CI Workflow](<images/All the images/Pasted image 20250719130913.png>)
 
 2. GitHub Secrets setup:
+
 ![Secrets](<images/All the images/Pasted image 20250719131215.png>)
 
 3. GitHub Actions tab:
+
 ![GitHub Actions](<images/All the images/Pasted image 20250719131453.png>)
 
 ### Task 5: Deploy to Azure Container Instance
@@ -101,6 +106,7 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 **Repository Structure:**
 
 ![Repo Structure 1](<images/All the images/Pasted image 20250719133126.png>)
+
 ![Repo Structure 2](<images/All the images/Pasted image 20250719133247.png>)
 
 ---
