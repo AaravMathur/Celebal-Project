@@ -25,11 +25,11 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 
 > Here are some screenshots of the webpage running locally.
 
-![Screenshot 1](images/all-images/screenshot-1.png)
-![Screenshot 2](images/all-images/screenshot-2.png)
-![Screenshot 3](images/all-images/screenshot-3.png)
-![Screenshot 4](images/all-images/screenshot-4.png)
-![Screenshot 5](images/all-images/screenshot-5.png)
+![alt text](<images/All the images/Pasted image 20250719125658.png>)
+![alt text](<images/All the images/Pasted image 20250719125738.png>)
+![alt text](<images/All the images/Pasted image 20250719125802.png>)
+![alt text](<images/All the images/Pasted image 20250719125817.png>)
+![alt text](<images/All the images/Pasted image 20250719125836.png>)
 
 ### Task 2: Docker and Containerization
 
@@ -38,10 +38,10 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Updated `application.properties` to disable SSL by default
 
 **application.properties**
-![Application Properties](images/all-images/application-properties.png)
+![Application Properties](<images/All the images/Pasted image 20250719130212.png>)
 
 **Dockerfile**
-![Dockerfile](images/all-images/dockerfile.png)
+![Dockerfile](<images/All the images/Pasted image 20250719130324.png>)
 
 ### Task 3: Azure Container Registry (ACR Setup)
 
@@ -49,7 +49,7 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Retrieved credentials using Azure CLI
 - Logged in to ACR and pushed image `acidemo:latest`
 
-![ACR Push Screenshot](images/all-images/acr-push.png)
+![ACR Push Screenshot](<images/All the images/Pasted image 20250719130623.png>)
 
 ### Task 4: GitHub Actions CI Workflow
 
@@ -59,13 +59,13 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Built & pushed Docker image automatically to ACR
 
 1. `ci.yml` file:
-![CI Workflow](images/all-images/ci-workflow.png)
+![CI Workflow](<images/All the images/Pasted image 20250719130913.png>)
 
 2. GitHub Secrets setup:
-![Secrets](images/all-images/github-secrets.png)
+![Secrets](<images/All the images/Pasted image 20250719131215.png>)
 
 3. GitHub Actions tab:
-![GitHub Actions](images/all-images/github-actions-tab.png)
+![GitHub Actions](<images/All the images/Pasted image 20250719131453.png>)
 
 ### Task 5: Deploy to Azure Container Instance
 
@@ -73,7 +73,7 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Pulled image from ACR
 - Assigned public IP with port 8080
 
-![ACI Deployment](images/all-images/aci-deployment.jpg)
+![ACI Deployment](images/All%20the%20images/WhatsApp%20Image%202025-07-18%20at%2018.02.13_2819ea6f.jpg)
 
 ### Task 6: Custom Domain Mapping via GoDaddy
 
@@ -82,11 +82,11 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 - Mapped to ACI's public DNS
 - Final URL: http://celebal.aaravdevops.xyz:8080
 
-![Custom Domain Mapping](images/all-images/custom-domain.png)
+![Custom Domain Mapping](<images/All the images/Pasted image 20250719132754.png>)
 
 > Note: If the URL shows an error like the image below, open it in **Incognito Mode**. The app is served on HTTP only. Modern browsers may automatically redirect to HTTPS, which will fail without a certificate.
 
-![HTTP Error](images/all-images/http-error.png)
+![HTTP Error](<images/All the images/Pasted image 20250719131907.png>)
 
 ---
 
@@ -100,8 +100,8 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 
 **Repository Structure:**
 
-![Repo Structure 1](images/all-images/repo-structure-1.png)
-![Repo Structure 2](images/all-images/repo-structure-2.png)
+![Repo Structure 1](<images/All the images/Pasted image 20250719133126.png>)
+![Repo Structure 2](<images/All the images/Pasted image 20250719133247.png>)
 
 ---
 
@@ -120,4 +120,4 @@ This project, built as a part of my DevOps and cloud-native learning, showcases 
 ## Final Outcome
 
 Your app is live at: 🔗 http://project.aaravdevops.xyz  
- Use **HTTP**, not HTTPS. Open in **Private/Incognito mode** to avoid forced HTTPS redirection.
+Use **HTTP**, not HTTPS. Open in **Private/Incognito mode** to avoid forced HTTPS redirection.
